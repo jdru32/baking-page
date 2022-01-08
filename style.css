@@ -1,0 +1,94 @@
+body {
+  background: linear-gradient(180deg, rgb(164, 80, 139), rgb(95, 10, 135));
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+h1,
+.weekDay {
+  line-height: 60px;
+}
+
+h3,
+button {
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+.weekDay {
+  border-radius: 10px;
+}
+
+button {
+  background: rgb(95, 10, 135);
+  border: none;
+  padding: 15px 35px 20px 30px;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button,
+.weekDay,
+.footer,
+.footerLink {
+  color: white;
+}
+
+button,
+.container {
+  border-radius: 30px;
+  margin: 20px auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  display: block;
+  max-width: 550px;
+  padding: 20px 80px;
+  background: white;
+}
+
+.container,
+.weekDay,
+.footer {
+  text-align: center;
+}
+
+.weekDay {
+  background: #0b977b;
+  padding: 15px 30px;
+  font-weight: 100;
+  font-size: 25px;
+  width: auto;
+  margin: auto;
+}
+
+.recipeName {
+  color: rgb(164, 80, 139);
+  font-weight: bold;
+}
+
+.inTextLinks {
+  color: #8b104e;
+}
+
+.footer {
+  font-family: monospace;
+}
+
+.inTextLinks,
+.footer {
+  font-size: 14px;
+}
