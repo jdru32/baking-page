@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get baking | Weekend cookies 🍪</title>
+    <style>
+      body {
+        background: linear-gradient(
+          180deg,
+          rgb(164, 80, 139),
+          rgb(95, 10, 135)
+        );
+        font-family: Helvetica, sans-serif;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-weight: 900;
+      }
+
+      h1, .weekDay {
+      line-height: 60px;
+      }
+
+      h3, button {
+        font-size: 20px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      img, .weekDay {
+        border-radius: 10px;
+      }
+
+      button {
+        background: rgb(95, 10, 135);
+        border: none;
+        padding: 15px 35px 20px 30px;
+        cursor: pointer;
+        transition: all 100ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      button, .weekDay, .footer, .footerLink {
+        color: white;
+      }
+
+      button, .container {
+        border-radius: 30px;
+        margin: 20px auto;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .container {
+        display: block;
+        max-width: 550px;
+        padding: 20px 80px;
+        background: white;
+      }
+
+      .container, .weekDay, .footer {
+        text-align: center;
+      }
+
+      .weekDay {
+        background: #0b977b;
+        padding: 15px 30px;
+        font-weight: 100;
+        font-size: 25px;
+        width: auto;
+        margin: auto;
+      }
+
+      .recipeName {
+        color: rgb(164, 80, 139);
+        font-weight: bold;
+      }
+
+      .inTextLinks {
+        color: #8b104e;
+      }
+
+      .footer {
+        font-family: monospace;
+      }
+
+      .inTextLinks, .footer {
+        font-size: 14px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Get baking this weekend</h1>
+      <h2>Discover your new favourite recipe</h2>
+      <br />
+      <hr />
+      <h2><span class="weekDay">Saturday</span></h2>
+      <h3>Chocolate, banana & pecan cookies</h3>
+      <img src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/381/original/albert-vincent-wu-wabI89dX864-unsplash.jpg?1626771699" alt = "chocolate cookies"></img>
+      <p>
+        A solid staple of any keen baker's cookbook collection, <strong>Ottolenghi
+        <em>Sweet</em></strong> is the first place to turn for weekend cookie
+        inspiration. Our personal favourites, the
+        <span class="recipeName">chocolate, banana and pecan cookies</span>, are
+        perfect if you prefer yours on the soft and fudgy side.
+      </p>
+      <a
+        class="inTextLinks"
+        href="https://ottolenghi.co.uk/recipes/chocolate-banana-and-pecan-cookies#"
+        target="_blank"
+      >
+        Find the full recipe on the Ottolenghi website
+      </a>
+      <br />
+      <br />
+      <hr />
+      <h2><span class="weekDay">Sunday</span></h2>
+      <h3>Oat, pecan & cranberry cookies</h3>
+      <img src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/380/original/joshua-sukoff-VlcklyKxsJk-unsplash.jpg?1626771112" alt = "oat cookies"></img>
+      <p>
+        For anyone who lives in North London, <strong>Gail's Bakery</strong> is also likely to be a firm favourite, but if you haven't tried making their
+        <span class="recipeName">oat, pecan and cranberry cookies</span>
+        yourselves at home, you're missing a trick.
+      </p>
+
+      <a
+        class="inTextLinks"
+        href="https://gailsbread.co.uk/order/grocery/180-cookbook.html"
+        target="_blank"
+        >Make all your Gail's favourites at home with their new cookbook</a
+      >
+      <br />
+      <br />
+      <hr />
+      <button>👉 Sign up for more baking inspiration</button>
+    </div>
+    <span class="footer"
+      ><p>
+        This page was coded by
+        <a
+          class="footerLink"
+          href="https://www.linkedin.com/in/joanna-drury/"
+          target="_blank"
+          >Joanna Drury</a
+        >
+      </p>
+    </span>
+  </body>
+  <script>
+    function signUp() {
+      let name = prompt(`What's your name?`);
+      let emailAddress = prompt(`What's your email address?`);
+      if (emailAddress.length === 0) {
+        alert(`Sorry, we didn't catch that. Please enter your email again!`);
+      } else {
+        alert(`Thanks for signing up ${name}, we'll be in touch soon with our latest recommendations! 🍪`);
+      }
+    }
+
+    let signUpButton = document.querySelector("button");
+    signUpButton.addEventListener("click", signUp);
+  </script>
+</html>
